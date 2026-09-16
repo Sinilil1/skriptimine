@@ -1,16 +1,14 @@
-#!/bim/bash
+#!/bin/bash
 
-# Skript arvutab esimese 10 paarisarvu summa
+#skript vläjastab 5 rida tärne.
 
-summa=0
-
-for ((i=1; i<=10; i++))
+for (( i=0; i!=5; i++ ))
 do
-    arv=$((i * 2))
-    summa=$((summa + arv))
+	for (( j=0; j!=5; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+
 done
-
-echo "Esimese 10 paarisarvu summa on: $summa"
-
-
 

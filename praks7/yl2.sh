@@ -1,17 +1,17 @@
 #!/bin/bash
 
-#Järgnev skript liidab kokku 
+#skript vläjastab 5 rida tärne.
 
-read -p "sisesta arv: " arv
+read -p "ridade  arv: " rida
+read -p "tärnide arv: " tarn
 
-a=0
-
-
-
-while (( arv != 0 ))
+for (( i=0; $rida!=i; i++ ))
 do
-	a=$(( a + arv % 10 ))
-	arv=$((arv / 10))
+	for (( j=0; $tarn!=j; j++ ))
+	do
+		echo -n "*"
+	done
+	echo ""
+
 done
 
-echo $a
